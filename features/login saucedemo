@@ -1,0 +1,8 @@
+Feature: SauceDemo Login
+
+  Scenario: Successful login
+    Given I open SauceDemo login page
+    When I enter username "standard_user"
+    And I enter password "secret_sauce"
+    And I click Login button
+    Then I should see Products page
